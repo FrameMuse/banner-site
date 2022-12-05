@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=400, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css?">
+    <title>BANNER SITE</title>
+</head>
+<body>
+    <header>
+        <h1 align="center">Спасибо!</h1>
+        <h3>Что перешёл по рекламному креативу, <br> ты не пожалеешь!</h3>
+    </header>
+    <main>
+        <h2 class="heading heading--light">Посмотри видео с участием <b>Николая Соболева!</b></h2>
+        <div class="video-container">
+            <img  class="js-open-video" src="assets/img/beans.svg" width="250" height="260" alt="видео">
+            <div class="video">
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/i0CeRJ-wcIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2 class="heading2">Уже готов? :)</h2>
+        <h3>Принимай участие в нашем проекте!</h3>
+        <div class="buttons">
+            <a class="buttons__button" href="#WhatsApp">
+                <span class="buttons__text">Написать нам в WhatsApp</span>
+                <span class="buttons__icon buttons__icon--whats_app"></span>
+            </a>
+            <a class="buttons__button" href="#Telegram">
+                    <span class="buttons__text">Написать нам в Telegram</span>
+                    <span class="buttons__icon buttons__icon--telegram"></span>
+            </a>
+        </div>
+        <script src="https://standoffcase.ru/assets/js/jquery-3.3.1.min.js"></script>
+        <script>
+            $(".video-container").click(() => {
+                $(".video").toggle();
+            });
+        </script>
+    </footer>
+</body>
+</html>

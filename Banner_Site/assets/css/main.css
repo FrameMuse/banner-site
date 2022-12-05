@@ -1,0 +1,238 @@
+@import url("fonts.css");
+
+* {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 450px;
+    margin: 0 auto;
+    font-family: "Avenir Next Cyr", sans-serif;
+    color: #353F48;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+body.dark {
+    background: #171522;
+    color: white;
+}
+
+body.dark h1 {
+    color: white;
+}
+
+h1 {
+    margin-top: 60px;
+    font-size: 36px;
+    line-height: 44px;
+    color: #353F48;
+}
+
+h3 {
+    margin-top: 20px;
+    font-family: 'Adobe Clean';
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+b {
+    line-height: normal;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 50px 30px;
+}
+
+main.center {
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.heading {
+    width: 160px;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.heading1 {
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.heading--light {
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.js-open-video {
+    width: 215px;
+    height: 280px;
+}
+
+.video {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.75);
+    z-index: 999;
+}
+
+iframe {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+    z-index: 9999;
+}
+
+iframe.default {
+    position: unset;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 110px;
+}
+
+iframe.iframe1 {
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+}
+
+footer {
+    margin-bottom: 40px;
+}
+
+.heading2 {
+    font-size: 27px;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    margin: 0 30px;
+}
+
+.buttons__button {
+    display: flex;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: linear-gradient(215.86deg, #D476E1 30.69%, rgba(0, 247, 224, 0.99) 106.42%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.buttons__text {
+    flex: 1;
+    align-self: center;
+    font-family: 'Adobe Clean';
+    font-size: 14px;
+    color: white;
+}
+
+.buttons__icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: no-repeat center;
+    background-size: contain;
+}
+.buttons__icon--whats_app {
+    background-image:  url("../img/whats_app.svg");
+}
+.buttons__icon--telegram {
+    background-image:  url("../img/telegram.svg");
+}
+
+.background-beans__bean--0, .background-beans__bean--1 {
+    position: absolute;
+    top: 0;
+    width: 220px;
+    height: 400px;
+    background: no-repeat center;
+    background-size: contain;
+    z-index: -1;
+}
+
+.background-beans {
+    position: absolute;
+    top: -143px;
+    left: 0;
+    right: 0;
+}
+
+.background-beans__bean--0 {
+    background-image: url(../img/big_bean_2.svg);
+}
+
+.background-beans__bean--1 {
+    background-image: url(../img/big_bean_1.svg);
+    top: -40px;
+    right: 0;
+}
+
+.image-beans {
+    position: absolute;
+    width: 105%;
+    height: 350px;
+}
+
+.centred-video {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.image-beans__bean--0, .image-beans__bean--1 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.image-beans__bean--0 {
+    top: -10px;
+    height: 110%;
+    background-image: url(../img/Vector.svg);
+}
+
+.image-beans__bean--1 {
+    background-image: url(../img/Vector-1.svg);
+}
+
+.play-icon {
+    position: absolute;
+    right: 75px;
+}
+
+.video-preview {
+    position: absolute;
+    width: 180px;
+    right: 0;
+}

@@ -1,0 +1,160 @@
+@import url("fonts.css");
+
+* {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 450px;
+    margin: 0 auto;
+    background: linear-gradient(299.96deg, #1A1A1A 0%, #2A2A2A 37.78%, #4D4D4D 100%) no-repeat;
+    font-family: "Avenir Next Cyr", sans-serif;
+    color: white;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+body.dark {
+    background: #171522;
+    color: white;
+}
+
+body.dark h1 {
+    color: white;
+}
+
+b {
+    line-height: normal;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0 100px 30px;
+}
+
+main.center {
+    justify-content: center;
+}
+
+.main-img {
+    position: absolute;
+    right: 0;
+    width: 200px;
+}
+
+.heading2 {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 75px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.heading {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.heading1 {
+    margin: 30px 0;
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 65px;
+    text-align: center;
+}
+
+.limited {
+    width: 210px;
+    margin-top: 25px;
+}
+
+.big-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 325px;
+    padding: 22px;
+    background: linear-gradient(0deg, #F8AFFF -0.01%, #854BFF 56.22%, #2F00FF 99.97%);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-button__icon {
+    width: 45px;
+}
+
+.big-button__text {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -4px;
+    margin-left: 6px;
+}
+
+.edges {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.edges__edge {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: no-repeat center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.edges__edge--top-left {
+    top: 0;
+    left: 0;
+    background-image: url(../img/edge-1.svg);
+    width: 200px;
+    height: 240px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edges__edge--top-right {
+    top: 0;
+    right: 0;
+    background-image: url(../img/edge.svg);
+}
+
+.edges__edge--bottom-left {
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/edge-2.svg);
+    width: 180px;
+    height: 180px;
+}
+
+.edges__edge--bottom-right {
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/edge-3.svg);
+    width: 230px;
+    height: 230px;
+}
